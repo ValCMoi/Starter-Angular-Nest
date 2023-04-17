@@ -53,7 +53,7 @@ services: # Here we define our service(s)
     volumes:
       - ./backend:/usr/src/app/
     command: >
-      bash -c "npm run start:dev"
+      bash -c "npm install && npm run start:dev"
     ports:
       - ${NEST_PORT_EXPOSE}:${NEST_PORT_INIT}
 
