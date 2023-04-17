@@ -41,6 +41,8 @@ services: # Here we define our service(s)
 
   api:
     container_name: ${PROJECT_NAME}-Back-NESTJS
+    env_file:
+      - .env
     networks:
       web:
           ipv4_address: ${IP_NEST}
